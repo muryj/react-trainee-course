@@ -1,11 +1,10 @@
+import ExpenceItem from "./components/ExpenceItem";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Test React app.
-        </p>
-      </header>
+    <div>
+      <p>Test React app.</p>
+      <ExpenceItem />
     </div>
   );
 }
