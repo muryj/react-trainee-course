@@ -16,6 +16,7 @@ export default function ExpenseForm(props) {
   };
   const dateChangeHandler = (event) => {
     setEnteredDate(event.target.value);
+    console.log(event.target.value);
   };
 
   const submitHandler = (event) => {
@@ -24,7 +25,7 @@ export default function ExpenseForm(props) {
     const expenseDate = {
       title: enteredTitle,
       amount: enteredAmount,
-      date: enteredDate,
+      date: new Date(enteredDate),
     };
     props.onSaveExpanseData(expenseDate);
 
