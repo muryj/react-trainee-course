@@ -7,7 +7,7 @@ export default function ExpensesList(props) {
   }
 
   return (
-    <ul>
+    <ul className="expenses-list">
       {props.items.map((expense) => (
         <ExpenseItem
           className="expenses-list"
