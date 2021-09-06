@@ -16,7 +16,6 @@ export default function ExpenseForm(props) {
   };
   const dateChangeHandler = (event) => {
     setEnteredDate(event.target.value);
-    console.log(event.target.value);
   };
 
   const submitHandler = (event) => {
@@ -67,6 +66,9 @@ export default function ExpenseForm(props) {
         </div>
       </div>
       <div className="new-expense__actions">
+        <button onClick={props.onCancel} type="button">
+          Cancel
+        </button>
         <button type="submit">Add Expense</button>
       </div>
     </form>
