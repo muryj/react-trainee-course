@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function MeetupDetaild() {}","map":{"version":3,"sources":["C:/Users/hshchehelskyi/WebstormProjects/react-trainee-course/nextjs-project/pages/[meetupId]/index.js"],"names":["MeetupDetaild"],"mappings":"AAAA,eAAe,SAASA,aAAT,GAAwB,CAAE","sourcesContent":["export default function MeetupDetaild(){}"]},"metadata":{},"sourceType":"module"}
