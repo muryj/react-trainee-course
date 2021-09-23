@@ -31,7 +31,7 @@ export default function MealItemForm(props) {
           id: "amount_" + props.id,
           type: "number",
           min: "1",
-          max: "5",
+          max: "6",
           step: "1",
           defaultValue: "1"
         }} />

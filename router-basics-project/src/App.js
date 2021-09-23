@@ -9,15 +9,16 @@ const QuoteDetail = React.lazy(() => import("./pages/QuoteDetail"));
 const NotFound = React.lazy(() => import("./pages/NotFound"));
 const AllQuotes = React.lazy(() => import("./pages/AllQuotes"));
 
-
 function App() {
   return (
     <Layout>
-      <Suspense fallback={
-        <div className="centered">
-          <LoadingSpinner />
-        </div>
-      }>
+      <Suspense
+        fallback={
+          <div className="centered">
+            <LoadingSpinner />
+          </div>
+        }
+      >
         <Switch>
           <Route path="/" exact>
             <Redirect to="/quotes" />
